@@ -31,11 +31,12 @@ def loop():
     last = None
     for i in batched(l, 5):
         totalclear()
+        print("\t\t\t\t\t", total_now)
         for j in i:
-            last = j
             print(j)
+        last = i[-1]
         total_now += len(i)
-        if total_now % day_reqs == 0:
+        if total_now % (day_reqs/2) == 0:
             rest = total_now/day_reqs
             if rest > 0:
                 print("milestone (%d), the rest will take" % (start + total_now), rest, "days")
