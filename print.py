@@ -8,8 +8,13 @@ def batched(iterable, n):
         tuple()
     )
 
-with open("dump/-awesome random music-nonnca-.json","r",encoding="utf-8") as f:
+startsfrom = "https://m.youtube.com/watch?v=sQTZ_qscox0"
+with open("dump/-awesome random music-.json","r",encoding="utf-8") as f:
     l= json.load(f)
+    if startsfrom:
+        l = l[l.index(startsfrom):]
+    print(len(l))
+    input()
     for i in batched(l, 5):
         print("\033c", end="")
         for j in i:

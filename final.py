@@ -37,12 +37,13 @@ else:
 yt = build('youtube', 'v3', credentials=credentials)
 
 pl = "PLsNfuSXkz2wVixE8nfCilAtXe70tZrRX-"
-startsfrom = "https://m.youtube.com/watch?v=fu0APhQqB7Y"
+startsfrom = "https://m.youtube.com/watch?v=sQTZ_qscox0"
 
 async def main():
     with open("dump/-awesome random music-.json","r",encoding="utf-8") as f:
         l = json.load(f)
-        l = l[l.index(startsfrom):]
+        if startsfrom:
+            l = l[l.index(startsfrom):]
         for i in batched(l, 5):
             for j in i:
                 print(j)
