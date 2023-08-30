@@ -14,6 +14,7 @@ with open("dump/-awesome random music-.json","r",encoding="utf-8") as f:
     if startsfrom:
         l = l[l.index(startsfrom):]
     print(len(l))
+    print("days this could take:", len(l)/200)
     input()
     for i in batched(l, 5):
         print("\033c", end="")
