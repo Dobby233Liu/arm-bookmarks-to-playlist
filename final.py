@@ -37,7 +37,7 @@ else:
 yt = build('youtube', 'v3', credentials=credentials)
 
 pl = "PLsNfuSXkz2wVixE8nfCilAtXe70tZrRX-"
-startsfrom = "https://m.youtube.com/watch?v=sQTZ_qscox0"
+startsfrom = "https://m.youtube.com/watch?v=SyX4rgXygwk"
 
 async def main():
     with open("dump/-awesome random music-.json","r",encoding="utf-8") as f:

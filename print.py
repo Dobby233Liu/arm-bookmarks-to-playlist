@@ -11,7 +11,7 @@ def batched(iterable, n):
 def totalclear():
     print("\033c", end="")
 
-startsfrom = "https://m.youtube.com/watch?v=sQTZ_qscox0"
+startsfrom = "https://m.youtube.com/watch?v=SyX4rgXygwk"
 start = 0
 day_reqs = 10000/50
 
